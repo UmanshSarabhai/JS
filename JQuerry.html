@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>JQuery Assignment</title>
+    <style>
+        /* CSS GOES HERE */
+        
+        #load {
+            border-radius: 10%;
+            height: 60px;
+            width: 130px;
+            font-size: large;
+            font-weight: 600;
+            text-decoration: olive;
+        }
+        
+        button:hover {
+            background-color: green;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="comments" style="border: 1px solid green;padding:1rem;margin-bottom: 0.5rem;">
+    </div>
+    <button id="load" onclick="javascript: poponload()">Load Data</button>
+
+
+    <script type="text/javascript">
+        function poponload() {
+            testwindow = window.open("https://jsonplaceholder.typicode.com/posts", "mywindow", "width=1000,height=1000,");
+        }
+    </script>
+
+
+
+
+</body>
+
+
+</html>
